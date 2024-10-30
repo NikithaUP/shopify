@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
 import { clearUpdateProfile } from "../../slices/authSlice";
 import MetaData from "../layouts/MetaData";
+import { useNavigate } from "react-router-dom";
 
 export default function UpdateProfile() {
     const {  error, user, isUpdated } = useSelector((state) => state.authState);
@@ -14,7 +15,8 @@ export default function UpdateProfile() {
   const [avatar, setAvatar] = useState("");
   const [avatarPreview, setAvatarPreview] = useState("/images/default_avatar.jpg");
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
     const onChangeAvatar = (e) => {
         const reader = new FileReader();
@@ -51,6 +53,7 @@ export default function UpdateProfile() {
               type: "success",
               onOpen:()=>dispatch(clearUpdateProfile())
             });
+          navigate('/myprofile')
             return;
         }
         if (error) {
