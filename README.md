@@ -3,7 +3,7 @@
 # Project Overview
 This is a fully functional e-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application allows users to browse products, add them to their cart, and proceed to checkout.
 
-The project is deployed on an AWS EC2 instance and can be accessed via the following link:[http://54.66.130.211/](Live Demo)
+The project is deployed on an AWS EC2 instance and can be accessed via the following link:[http://54.66.130.211/] (Live Demo)
 
 # Features
 - User authentication and authorization (Sign Up, Login, Logout)
@@ -30,4 +30,4 @@ The application is deployed on an AWS EC2 instance. Here are the key steps taken
 - Configured NGINX as a reverse proxy to route traffic to the backend and serve the frontend.
 
 # Access the Application
-Visit the live project at [http://54.66.130.211/](http://54.66.130.211/)
+Visit the live project at [http://54.66.130.211/] (http://54.66.130.211/)
